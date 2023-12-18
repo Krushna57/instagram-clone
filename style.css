@@ -255,3 +255,12 @@ img {
 .reel-page div .details .description {
     text-wrap: wrap;
 }
+@media screen and (max-width:750px){
+    main{
+        width: 100%;
+    }
+    video{
+        height: 100%;
+        width: 100%;
+    }
+}
