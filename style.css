@@ -1,0 +1,449 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(28, 34, 39);
+    color: aliceblue;
+    font-family: 'Segoe UI';
+    user-select: none;
+}
+
+main {
+    margin: auto;
+    height: 93vh;
+    width: 350px;
+    background-color: rgb(255, 255, 255);
+    border: 5px solid black;
+    border-bottom: 20px solid black;
+    border-radius: 20px 20px 15px 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+}
+
+.loader {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    place-content: center;
+
+}
+
+.loader .branding {
+    position: absolute;
+    bottom: 100px;
+    color: rgb(66, 66, 66);
+    text-align: center;
+    font-weight: 500;
+}
+
+.home-page {
+    position: relative;
+    /* display: none; */
+}
+
+.home-page header {
+    display: flex;
+    background-color: white;
+    flex-direction: row;
+    place-items: center;
+    place-content: space-between;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.story-section {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 1px;
+}
+
+.story-section .story {
+    background: linear-gradient(45deg, yellow, rgb(216, 19, 19));
+    border-radius: 50%;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    align-items: center;
+    margin: 3px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.story-section .story img {
+    margin: 3px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.story-section .story label {
+    width: 80px;
+    color: black;
+    font-size: 11px;
+    text-align: center;
+    overflow: hidden;
+    position: absolute;
+    bottom: -15px;
+}
+
+.story-section .story .plus {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+}
+
+.feed {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* border: 2px solid red; */
+    color: rgb(27, 27, 27);
+    font-size: 11pt;
+}
+
+.feed .post {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.feed .post .row-1,
+.feed .post .row-3 {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    place-content: space-between;
+}
+
+.post .row-4 {
+    padding: 0% 10px;
+}
+
+.feed .post .row-1 .col-1,
+.feed .post .row-1 .col-2,
+.feed .post .row-3 .col-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px
+}
+
+.feed .post .row-1 .col-1 img {
+    border-radius: 50%;
+}
+
+.post .row-4 .comments {
+    color: rgb(116, 113, 113);
+}
+
+.post .row-4 .comments .profile-pic {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.post .row-4 .comments .profile-pic img {
+    border-radius: 50%;
+}
+
+main .navigations {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    bottom: 0px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    place-content: space-around;
+}
+
+img {
+    cursor: pointer;
+}
+
+/* reel page css */
+.reel-page {
+    display: none;
+    position: relative;
+    scroll-snap-type: both mandatory;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    width: 100%;
+    height: 90vh;
+    /* text-shadow: 0px 0px 3px white; */
+    
+}
+
+.reel-page .camera {
+    position: fixed;
+    margin-left: 10px;
+    margin-top: 10px;
+    z-index: 3;
+}
+
+.reel-page>div {
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    scroll-snap-align: start;
+}
+
+.reel-page div .aside {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    right: 10px;
+    bottom: 100px;
+}
+.reel-page div .aside img{
+    filter: drop-shadow(1px 1px 1px white);
+}
+
+.reel-page div .details {
+    width: 80%;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    bottom: 45px;
+}
+
+.reel-page div .details .user {
+    display: flex;
+    gap: 10px;
+
+}
+
+.reel-page div .details .user img {
+    border-radius: 50%;
+}
+.reel-page div .details button{
+    color: aliceblue;
+    background: transparent;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 1px solid;
+}
+
+.reel-page div .details .description {
+    text-wrap: wrap;
+}
+
+/* message-page */
+.message-page{
+    width: calc(100% - 20px);
+    height: 90vh;
+    overflow: auto;
+    color: black;
+    padding: 10px;
+    display: none;
+}
+.message-page .msg-header,.profile-page .header{
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.message-page #search-msg{
+    height: 30px;
+    margin: 20px 0;
+    padding: 3px 10px;
+    width: 100%;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    background-color: rgb(222, 224, 226);
+}
+.message-page .row-1{
+    display: flex;
+    flex-direction: row;
+    place-content: space-between;
+}
+.message-page .row-1 .col-1{
+    font-weight: bold;
+}
+.message-page .row-1 .col-2{
+    color: rgb(0, 140, 255);
+    cursor: pointer;
+}
+.message-page .row{
+    display: flex;
+    flex-direction: row;
+    gap :10px;
+    margin-top: 20px;
+    position: relative;
+}
+.message-page .row .col:nth-child(2){
+    color: rgb(47, 47, 48);
+    font-size: 14px;
+    padding: 4px 0;
+}
+.message-page .row .col:nth-child(3){
+   position: absolute;
+   right: 5px;
+   top: 15px;
+}
+.message-page .row .col:nth-child(1) img{
+    border-radius: 50%;
+}
+
+/* .profile-page css */
+.profile-page{
+    width: calc(100% - 20px);
+    height: 90vh;
+    overflow: auto;
+    color: black;
+    padding: 10px;
+    display: none;
+}
+.profile-page .profile-box .row-1{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    place-content: space-between;
+    align-items: center;
+}
+.profile-page .row-1 .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile-page .profile-box .row-1 .col:nth-child(1) img{
+    border-radius: 50%;
+}
+.profile-page .profile-box .row-2{
+    display: flex;
+    flex-direction: column;
+}
+.profile-page .profile-box .row-2 label:nth-child(1){
+    font-weight: bold;
+    color: rgb(46, 46, 46);
+}
+.profile-page .profile-box .row-2 label:nth-child(2){
+    color: rgb(9, 9, 41);
+}
+.profile-page .profile-box .row-3{
+    display: flex;
+    flex-direction: row;
+    place-content: space-between;
+    margin-top: 20px;
+}
+.profile-page .profile-box .row-3 button{
+    width: 45%;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: rgb(44, 44, 44);
+}
+
+.profile-page .highlights{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    overflow-y: scroll;
+    align-items: center;
+    gap: 20px;
+}
+.profile-page .highlights div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;    
+    font-size: 10pt;
+}
+.profile-page .highlights div img{
+    border-radius: 50%;
+}
+.profile-page .post-reels{
+    margin-top: 20px;
+    height: auto;
+    width: 100%;
+    overflow-y: scroll;
+}
+.profile-page .post-reels .row-1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    place-content: space-around;
+    align-items: center;
+}
+.profile-page .post-reels .row-2{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
+
+/* search page */
+.search-page{
+    width: calc(100% - 20px);
+    height: 90vh;
+    overflow: auto;
+    color: black;
+    padding: 10px;
+    display: none;
+}
+.search-page #search{
+    width: 100%;
+    height: 30px;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgb(226, 228, 230);
+}
+.search-page .explore{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap:2px;
+    align-items: center;
+}
+.search-page .explore .row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    place-content: space-between;
+}
+
+
+@media screen and (max-width:750px){
+    main{
+        width: 100%;
+    }
+    video{
+        height: 100%;
+        width: 100%;
+    }
+}

@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icons/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Instagram</title>
+</head>
+
+<body onload="loader.style.display='none'">
+
+    <main id="main">
+        <!-- loader -->
+        <div class="loader" id="loader">
+            <img src="icons/favicon.png" width="70" alt="">
+            <div class="branding">from <br> <img src="icons/from-meta.png" width="150px" alt=""></div>
+        </div>
+        <!-- end of the loader -->
+
+        <!-- instagram home home-page -->
+        <div class="home-page" id="home-page">
+            <header>
+                <div class="logo-ico">
+                    <img src="icons/insta-name-logo.png" width="150">
+                </div>
+                <div class="messages-ico">
+                    <img src="icons/heart.png" width="25" alt=""> &nbsp;
+                    <img src="icons/messenger.png" width="25" alt="" onclick="msgPage()">
+                </div>
+            </header>
+            <div class="story-section">
+                <div class="story">
+                    <img src="assets/krish.jpg" width="70" height="70" alt="">
+                    <label for="username">Your story</label>
+                    <img src="icons/plus.png" width="20" class="plus">
+                </div>
+                <div class="story">
+                    <img src="assets/jay.jpg" width="70" height="70" alt="">
+                    <label for="username">jaayxz.xt</label>
+                </div>
+                <div class="story">
+                    <img src="assets/akash.webp" width="70" height="70" alt="">
+                    <label for="username">_akashh.x_</label>
+                </div>
+                <div class="story">
+                    <img src="assets/aditya.jpg" width="70" height="70" alt="">
+                    <label for="username">aditya_ekhande_</label>
+                </div>
+                <div class="story">
+                    <img src="assets/unknown-profie.png" width="70" height="70" alt="">
+                    <label for="username">__sanket.s</label>
+                </div>
+                <div class="story">
+                    <img src="assets/abp.jpg" width="70" height="70" alt="">
+                    <label for="username">abpmajhatv</label>
+                </div>
+                <div class="story">
+                    <img src="assets/teddy.png" width="70" height="70" alt="">
+                    <label for="username">anamika</label>
+                </div>
+                <div class="story">
+                    <img src="assets/tripti.jpg" width="70" alt="">
+                    <label for="username">tripti_dimri</label>
+                </div>
+
+            </div>
+            <br>
+            <div class="feed">
+                <div class="post">
+                    <div class="row-1">
+                        <div class="col-1">
+                            <div class="profile-pic"><img src="assets/akash.webp" alt="" width="30px"></div>
+                            <div class="username"><b>_akashh.x_</b></div>
+                        </div>
+                        <div class="col-2">
+                            <div class="more"><img src="icons/dots.png" alt="" width="20px"></div>
+                        </div>
+                    </div>
+                    <div class="row-2">
+                        <img src="assets/akash.webp" alt="" width="100%">
+                    </div>
+                    <div class="row-3">
+                        <div class="col-1">
+                            <img src="icons/heart.png" alt="" width="25px">
+                            <img src="icons/chat.png" alt="" width="25px">
+                            <img src="icons/share.png" alt="" width="25px">
+                        </div>
+                        <div class="col-2">
+                            <img src="icons/ribbon.png" alt="" width="25px">
+                        </div>
+                    </div>
+                    <div class="row-4">
+                        Liked by <b>trainwithrc</b> and <b>others</b> <br>
+                        <b>_akashh.x</b> Working on...💪 <br>
+                        <span class="comments">
+                            View all 138 comments <br>
+                            <div class="profile-pic"><img src="assets/krish.jpg" alt="" width="30px"> Add a comment...
+                            </div>
+                        </span>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="row-1">
+                        <div class="col-1">
+                            <div class="profile-pic"><img src="assets/jay.jpg" alt="" width="30px"></div>
+                            <div class="username"><b>jaayxz.xt</b></div>
+                        </div>
+                        <div class="col-2">
+                            <div class="more"><img src="icons/dots.png" alt="" width="20px"></div>
+                        </div>
+                    </div>
+                    <div class="row-2">
+                        <img src="assets/jpost.webp" alt="" width="100%">
+                    </div>
+                    <div class="row-3">
+                        <div class="col-1">
+                            <img src="icons/heart.png" alt="" width="25px">
+                            <img src="icons/chat.png" alt="" width="25px">
+                            <img src="icons/share.png" alt="" width="25px">
+                        </div>
+                        <div class="col-2">
+                            <img src="icons/ribbon.png" alt="" width="25px">
+                        </div>
+                    </div>
+                    <div class="row-4">
+                        Liked by <b>krushnasahane7</b> and <b>others</b> <br>
+                        <b>jaayxz.xt</b> 🤞✨ <br>
+                        <span class="comments">
+                            View all 108 comments <br>
+                            <div class="profile-pic"><img src="assets/krish.jpg" alt="" width="30px"> Add a comment...
+                            </div>
+                        </span>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="row-1">
+                        <div class="col-1">
+                            <div class="profile-pic"><img src="assets/abp.jpg" alt="" width="30px"></div>
+                            <div class="username"><b>abpmajhatv</b></div>
+                        </div>
+                        <div class="col-2">
+                            <div class="more"><img src="icons/dots.png" alt="" width="20px"></div>
+                        </div>
+                    </div>
+                    <div class="row-2">
+                        <img src="assets/abppost.jpg" alt="" width="100%">
+                    </div>
+                    <div class="row-3">
+                        <div class="col-1">
+                            <img src="icons/heart.png" alt="" width="25px">
+                            <img src="icons/chat.png" alt="" width="25px">
+                            <img src="icons/share.png" alt="" width="25px">
+                        </div>
+                        <div class="col-2">
+                            <img src="icons/ribbon.png" alt="" width="25px">
+                        </div>
+                    </div>
+                    <div class="row-4">
+                        Liked by <b>__sanket.s</b> and <b>others</b> <br>
+                        <b>abpmajhatv</b> मराठा आरक्षणप्रश्नी संभाजीराजेंनी आयोजित
+                        केली खासदारांची बैठक<br>
+                        <span class="comments">
+                            View all 138 comments <br>
+                            <div class="profile-pic"><img src="assets/krish.jpg" alt="" width="30px"> Add a comment...
+                            </div>
+                        </span>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="row-1">
+                        <div class="col-1">
+                            <div class="profile-pic"><img src="assets/tripti.jpg" alt="" width="30px"></div>
+                            <div class="username"><b>tripti_dimri</b></div>
+                        </div>
+                        <div class="col-2">
+                            <div class="more"><img src="icons/dots.png" alt="" width="20px"></div>
+                        </div>
+                    </div>
+                    <div class="row-2">
+                        <img src="assets/tripripost.jpg" alt="" width="100%">
+                    </div>
+                    <div class="row-3">
+                        <div class="col-1">
+                            <img src="icons/heart.png" alt="" width="25px">
+                            <img src="icons/chat.png" alt="" width="25px">
+                            <img src="icons/share.png" alt="" width="25px">
+                        </div>
+                        <div class="col-2">
+                            <img src="icons/ribbon.png" alt="" width="25px">
+                        </div>
+                    </div>
+                    <div class="row-4">
+                        Liked by <b>a.n.raut</b> and <b>others</b> <br>
+                        <b>tripti_dimri</b> ❤ <br>
+                        <span class="comments">
+                            View all 1336 comments <br>
+                            <div class="profile-pic"><img src="assets/krish.jpg" alt="" width="30px"> Add a comment...
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of the home home-page -->
+
+        <!-- reel page  -->
+        <div class="reel-page" id="reel-page">
+            <img src="icons/icons8-camera-50.png" alt="" width="30" class="camera">
+            <!-- reel 1 -->
+            <div class="section">
+                <video src="assets/videos/v1.mp4" width="100%" loop> video csn not be played</video>
+                <div class="aside">
+                    <img src="icons/heart.png" width="25" alt="">
+                    <img src="icons/chat.png" width="25" alt="">
+                    <img src="icons/share.png" width="25" alt="">
+                    <img src="icons/dots.png" width="25" alt="">
+                </div>
+                <div class="details">
+                    <div class="user">
+                        <img src="assets/aditya.jpg" width="25px" alt="">
+                        <b>Username</b>
+                        <button>Follow</button>
+                    </div>
+                    <div class="description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, nisi.
+                    </div>
+                </div>
+            </div>
+            <!-- reel 2 -->
+            <div class="section">
+                <video src="assets/videos/v2.mp4" width="100%" loop> video csn not be played</video>
+                <div class="aside">
+                    <img src="icons/heart.png" width="25" alt="">
+                    <img src="icons/chat.png" width="25" alt="">
+                    <img src="icons/share.png" width="25" alt="">
+                    <img src="icons/dots.png" width="25" alt="">
+                </div>
+                <div class="details">
+                    <div class="user">
+                        <img src="assets/aditya.jpg" width="25px" alt="">
+                        <b>Username</b>
+                        <button>Follow</button>
+                    </div>
+                    <div class="description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, nisi.
+                    </div>
+                </div>
+            </div>
+            <!-- reel 3 -->
+            <div class="section">
+                <video src="assets/videos/v3.mp4" width="100%" loop> video csn not be played</video>
+                <div class="aside">
+                    <img src="icons/heart.png" width="25" alt="">
+                    <img src="icons/chat.png" width="25" alt="">
+                    <img src="icons/share.png" width="25" alt="">
+                    <img src="icons/dots.png" width="25" alt="">
+                </div>
+                <div class="details">
+                    <div class="user">
+                        <img src="assets/aditya.jpg" width="25px" alt="">
+                        <b>Username</b>
+                        <button>Follow</button>
+                    </div>
+                    <div class="description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, nisi.
+                    </div>
+                </div>
+            </div>
+            <!-- reel 4 -->
+            <div class="section">
+                <video src="assets/videos/v4.MP4" width="100%" loop> video csn not be played</video>
+                <div class="aside">
+                    <img src="icons/heart.png" width="25" alt="">
+                    <img src="icons/chat.png" width="25" alt="">
+                    <img src="icons/share.png" width="25" alt="">
+                    <img src="icons/dots.png" width="25" alt="">
+                </div>
+                <div class="details">
+                    <div class="user">
+                        <img src="assets/aditya.jpg" width="25px" alt="">
+                        <b>Username</b>
+                        <button>Follow</button>
+                    </div>
+                    <div class="description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, nisi.
+                    </div>
+                </div>
+            </div>
+            <!-- reel 5 -->
+            <div class="section">
+                <video src="assets/videos/v5.mp4" width="100%" loop> video csn not be played</video>
+                <div class="aside">
+                    <img src="icons/heart.png" width="25" alt="">
+                    <img src="icons/chat.png" width="25" alt="">
+                    <img src="icons/share.png" width="25" alt="">
+                    <img src="icons/dots.png" width="25" alt="">
+                </div>
+                <div class="details">
+                    <div class="user">
+                        <img src="assets/aditya.jpg" width="25px" alt="">
+                        <b>Username</b>
+                        <button>Follow</button>
+                    </div>
+                    <div class="description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, nisi.
+                    </div>
+                </div>
+            </div>
+            <!-- reel 6 -->
+            <div class="section">
+                <video src="assets/videos/v9.mp4" width="100%" loop> video csn not be played</video>
+                <div class="aside">
+                    <img src="icons/heart.png" width="25" alt="">
+                    <img src="icons/chat.png" width="25" alt="">
+                    <img src="icons/share.png" width="25" alt="">
+                    <img src="icons/dots.png" width="25" alt="">
+                </div>
+                <div class="details">
+                    <div class="user">
+                        <img src="assets/aditya.jpg" width="25px" alt="">
+                        <b>Username</b>
+                        <button>Follow</button>
+                    </div>
+                    <div class="description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, nisi.
+                    </div>
+                </div>
+            </div>
+            <!-- reel 7 file size is large-->
+            <!-- <div class="section">
+                <video src="assets/videos/v6.mp4" width="100%" loop> video csn not be played</video>
+                <div class="aside">
+                    <img src="icons/heart.png" width="25" alt="">
+                    <img src="icons/chat.png" width="25" alt="">
+                    <img src="icons/share.png" width="25" alt="">
+                    <img src="icons/dots.png" width="25" alt="">
+                </div>
+                <div class="details">
+                    <div class="user">
+                        <img src="assets/aditya.jpg" width="25px" alt="">
+                        <b>Username</b>
+                        <button>Follow</button>
+                    </div>
+                    <div class="description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, nisi.
+                    </div>
+                </div>
+            </div> -->
+            <!-- reel 8 file size is large-->
+            <!-- <div class="section">
+                <video src="assets/videos/v7.mp4" width="100%" loop> video csn not be played</video>
+                <div class="aside">
+                    <img src="icons/heart.png" width="25" alt="">
+                    <img src="icons/chat.png" width="25" alt="">
+                    <img src="icons/share.png" width="25" alt="">
+                    <img src="icons/dots.png" width="25" alt="">
+                </div>
+                <div class="details">
+                    <div class="user">
+                        <img src="assets/aditya.jpg" width="25px" alt="">
+                        <b>Username</b>
+                        <button>Follow</button>
+                    </div>
+                    <div class="description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, nisi.
+                    </div>
+                </div>
+            </div> -->
+            <!-- reel 9 file size is large-->
+            <!-- <div class="section">
+                <video src="assets/videos/v8.mp4" width="100%" loop> video csn not be played</video>
+                <div class="aside">
+                    <img src="icons/heart.png" width="25" alt="">
+                    <img src="icons/chat.png" width="25" alt="">
+                    <img src="icons/share.png" width="25" alt="">
+                    <img src="icons/dots.png" width="25" alt="">
+                </div>
+                <div class="details">
+                    <div class="user">
+                        <img src="assets/aditya.jpg" width="25px" alt="">
+                        <b>Username</b>
+                        <button>Follow</button>
+                    </div>
+                    <div class="description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, nisi.
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <!-- end of the reel page -->
+
+        <!-- message page -->
+        <div class="message-page" id="message-page">
+            <div class="msg-header">
+                <img src="icons/back.png" alt="" width="25" onclick="back()">
+                <span>krushnasahane7</span>
+            </div>
+            <input type="search" name="" id="search-msg" placeholder="Search">
+            <div class="row-1">
+                <div class="col-1">Message</div>
+                <div class="col-2">Requests</div>
+            </div>
+            <!-- msg-list -->
+            <div class="row">
+                <div class="col"><img src="assets/aditya.jpg" alt="" width="50"></div>
+                <div class="col">
+                    <label for="name"> Aditya Ekhande</label> <br>
+                    <span>Reacted 💖 to your message. 3m</span>
+                </div>
+                <div class="col">
+                    <img src="icons/icons8-camera-50.png" alt="" width="25px">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col"><img src="assets/akash.webp" alt="" width="50"></div>
+                <div class="col">
+                    <label for="name"> Akash Sahane</label> <br>
+                    <span>Reacted 😂 to your message. 10m</span>
+                </div>
+                <div class="col">
+                    <img src="icons/icons8-camera-50.png" alt="" width="25px">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col"><img src="assets/unknown-profie.png" alt="" width="50"></div>
+                <div class="col">
+                    <label for="name"> Sanket Shelke</label> <br>
+                    <span>Reacted ❣ to your message. 15m</span>
+                </div>
+                <div class="col">
+                    <img src="icons/icons8-camera-50.png" alt="" width="25px">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col"><img src="assets/jay.jpg" alt="" width="50"></div>
+                <div class="col">
+                    <label for="name"> Jay Phad</label> <br>
+                    <span>Hi. 20m</span>
+                </div>
+                <div class="col">
+                    <img src="icons/icons8-camera-50.png" alt="" width="25px">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col"><img src="assets/unknown-profie.png" alt="" width="50"></div>
+                <div class="col">
+                    <label for="name"> Akshay Sahane Patil</label> <br>
+                    <span>Liked a message. 5h</span>
+                </div>
+                <div class="col">
+                    <img src="icons/icons8-camera-50.png" alt="" width="25px">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col"><img src="assets/unknown-profie.png" alt="" width="50"></div>
+                <div class="col">
+                    <label for="name"> Nikesh Sahane</label> <br>
+                    <span>Sent 5h ago</span>
+                </div>
+                <div class="col">
+                    <img src="icons/icons8-camera-50.png" alt="" width="25px">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col"><img src="assets/unknown-profie.png" alt="" width="50"></div>
+                <div class="col">
+                    <label for="name"> Vikas Gangure</label> <br>
+                    <span>Sent 6h ago</span>
+                </div>
+                <div class="col">
+                    <img src="icons/icons8-camera-50.png" alt="" width="25px">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col"><img src="assets/unknown-profie.png" alt="" width="50"></div>
+                <div class="col">
+                    <label for="name"> Shankar Sable</label> <br>
+                    <span>Seen 6h ago</span>
+                </div>
+                <div class="col">
+                    <img src="icons/icons8-camera-50.png" alt="" width="25px">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col"><img src="assets/unknown-profie.png" alt="" width="50"></div>
+                <div class="col">
+                    <label for="name"> Saurabh Sanjay Imle</label> <br>
+                    <span>Reacted 😂 to your message. 20h</span>
+                </div>
+                <div class="col">
+                    <img src="icons/icons8-camera-50.png" alt="" width="25px">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col"><img src="assets/unknown-profie.png" alt="" width="50"></div>
+                <div class="col">
+                    <label for="name"> Aadinath Raut</label> <br>
+                    <span>Reacted ❤ to your message. 20h</span>
+                </div>
+                <div class="col">
+                    <img src="icons/icons8-camera-50.png" alt="" width="25px">
+                </div>
+            </div>
+        </div>
+        <!-- end of the message Page -->
+
+        <!-- profile Page -->
+        <div class="profile-page" id="profile-page">
+            <div class="header">
+                <label for="name">krushnasahane7</label>
+            </div>
+            <div class="profile-box">
+                <div class="row-1">
+                    <div class="col"><img src="assets/krish.jpg" alt="" width="80px"></div>
+                    <div class="col"><b>1</b> <label>Posts</label></div>
+                    <div class="col"><b>406</b><label>Followers</label></div>
+                    <div class="col"><b>548</b><label>Following</label></div>
+                </div>
+                <div class="row-2">
+                    <label for="name">KRUSHNA SAHANE</label>
+                    <label for="second insta id">@code_with_krish_</label>
+                </div>
+                <div class="row-3">
+                    <button>Edit profile</button>
+                    <button>Share profile</button>
+                </div>
+            </div>
+            <div class="highlights">
+                <div><img src="assets/avcoe.jpg" alt="" width="60px" height="60px">
+                    <label for="myself">AVCOE</label>
+                </div>
+                <div><img src="assets/krish.jpg" alt="" width="60px" height="60px">
+                    <label for="myself">MySelf</label>
+                </div>
+                <div><img src="assets/travel.jpg" alt="" width="60px" height="60px">
+                    <label for="myself">Travel Life</label>
+                </div>
+                <div><img src="assets/farmer.jpg" alt="" width="60px" height="60px">
+                    <label for="myself">Shetkari</label>
+                </div>
+                <div><img src="assets/holi.jpg" alt="" width="60px" height="60px">
+                    <label for="myself">Holi 2K22</label>
+                </div>
+            </div>
+            <section class="post-reels">
+                <div class="row-1">
+                    <img src="icons/grid.png" alt="" width="25px">
+                    <img src="icons/reel.webp" alt="" width="30px">
+                    <img src="icons/tag.png" alt="" width="35px">
+                </div>
+                <div class="row-2">
+                    <img src="assets/krish.jpg" alt="" width="33%">
+                </div>
+            </section>
+        </div>
+        <!-- End of the profile Page -->
+
+        <!-- search page -->
+        <div class="search-page" id="search-page">
+            <input type="search" name="searchbar" id="search" placeholder="Search" onfocus="explore.style.display='none'" onblur="explore.style.display='block'">
+            <div class="explore" id="explore">
+                <div class="row">
+                    <img src="assets/abp.jpg" alt="" width="32%">
+                    <img src="assets/krish.jpg" alt="" width="32%">
+                    <img src="assets/aditya.jpg" alt="" width="32%">
+                </div>
+                <div class="row">
+                    <video src="assets/videos/v1.mp4" width="32%" muted autoplay></video>
+                    <video src="assets/videos/v2.mp4" width="32%" muted autoplay></video>
+                    <video src="assets/videos/v5.mp4" width="32%" muted autoplay></video>
+                </div>
+                <div class="row">
+                    <img src="assets/akash.webp" alt="" width="32%">
+                    <img src="assets/jay.jpg" alt="" width="32%">
+                    <img src="assets/unknown-profie.png" alt="" width="32%">
+                </div>
+                <div class="row">
+                    <img src="assets/tripripost.jpg" alt="" width="32%">
+                    <img src="assets/travel.jpg" alt="" width="32%">
+                    <img src="assets/tripti.jpg" alt="" width="32%">
+                </div>
+            </div>
+        </div>
+        <!-- end of the search Page -->
+        
+        <!-- navigations -->
+        <div class="navigations" id="navigations">
+            <img src="icons/homepage.png" alt="" width="25" height="25" id="home" onclick="homePage()">
+            <img src="icons/search.png" alt="" width="25" height="25" onclick="searchPage()">
+            <img src="icons/add.png" alt="" width="25" height="25"
+                onclick="alert('Page not available...!\nYou can enjoy the reels ❣')">
+            <img src="icons/reel.webp" alt="" width="25" height="25" id="reel" onclick="reelMode()">
+            <img src="assets/krish.jpg" width="25" height="25" style="border-radius: 50%;" onclick="profile()">
+        </div>
+        <!-- end navigations -->
+    </main>
+</body>
+
+</html>
+<script>
+    let currentPage = document.getElementById("home-page");
+    function reelMode() {
+        alert("Android:\nSingle click to play the current reel\nDouble click to mute current reel")
+        currentPage.style.display = "none";
+        currentPage = document.getElementById("reel-page");
+        currentPage.style.display = "block";
+        const videos = document.querySelectorAll("video");
+
+        for (const video of videos) {
+            video.addEventListener("mouseover", function () {
+                if (video.paused) {
+                    for (const vid of videos) {
+                        vid.pause();
+                    }
+                    video.play();
+                }
+                // else
+                // video.pause();
+            });
+            video.addEventListener("dblclick", function () {
+                if (video.muted) {
+                    video.muted = false;
+                }
+                else
+                    video.muted = true;
+            });
+        }
+    }
+    function homePage() {
+        currentPage.style.display = "none";
+        currentPage = document.getElementById("home-page");
+        currentPage.style.display = "block";
+    }
+    function msgPage() {
+        currentPage.style.display = "none";
+        currentPage = document.getElementById("message-page");
+        currentPage.style.display = "block";
+    }
+    function back() {
+        currentPage.style.display = "none";
+        currentPage = document.getElementById("home-page");
+        currentPage.style.display = "block";
+    }
+    function profile(){
+        currentPage.style.display = "none";
+        currentPage = document.getElementById("profile-page");
+        currentPage.style.display = "block";
+    }
+    function searchPage(){
+        currentPage.style.display = "none";
+        currentPage = document.getElementById("search-page");
+        currentPage.style.display = "block";
+    }
+</script>
